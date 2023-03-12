@@ -1,17 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
-    void OnCollisionEnter(Collision other) 
-    {
-        Debug.Log(this.name + "--Collided with--" + other.gameObject.name);
-    }
-
+    [SerializeField] float loadDelay = 1f;
+    [SerializeField] ParticleSystem crashVFX;
+    
     void OnTriggerEnter(Collider other) 
     {
-        // String Interpolation
-        Debug.Log($"{this.name} **Triggered by** {other.gameObject.name}");    
+        StartCrashSequence();
+    }
+
+    void StartCrashSequence()
+    {
+        crashVFX.Play();
+        
+        GetComponent<PlayerControls>().enabled = false;
+        foreach (MeshRenderer meshInChild in GetComponentsInChildren<MeshRenderer>())
+        {
+            meshInChild.enabled = false;
+        }
+     
+        foreach (Collider colliderInChild in GetComponentsInChildren<Collider>())
+        {
+            colliderInChild.enabled = false;
+        }
+
+        Invoke("ReloadLevel", loadDelay); 
+    }
+
+    void ReloadLevel() 
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }

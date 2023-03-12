@@ -191,6 +191,46 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2.68
       objectReference: {fileID: 0}
+    - target: {fileID: 1154772863174718043, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
+      propertyPath: fire.m_Id
+      value: a1b3a4ba-bc93-4f5e-bd9a-f78b6763f0ae
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154772863174718043, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
+      propertyPath: movement.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154772863174718043, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154772863174718043, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 7746366657675017280}
+    - target: {fileID: 1154772863174718043, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 1342154135453533720}
+    - target: {fileID: 1154772863174718043, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
+      propertyPath: movement.m_ExpectedControlType
+      value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154772863174718043, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154772863174718043, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 69b6d7e6-e7ec-41f2-bfa2-febe3cccee53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154772863174718043, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/space
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154772863174718043, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Fire
+      objectReference: {fileID: 0}
     - target: {fileID: 3803621981922324856, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -245,8 +285,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
+--- !u!1 &1342154135453533720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1277341011658247396, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
+  m_PrefabInstance: {fileID: 223575737354554108}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4022667711899433860 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3803621981922324856, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
+  m_PrefabInstance: {fileID: 223575737354554108}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7746366657675017280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7537569594262435516, guid: 010d19e3eca9a6546b84a7e6514e7cca, type: 3}
   m_PrefabInstance: {fileID: 223575737354554108}
   m_PrefabAsset: {fileID: 0}
