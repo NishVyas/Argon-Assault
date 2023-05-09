@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children:
   - {fileID: -7613343467514433482}
+  - {fileID: -4642271877629190092}
   m_Clips: []
   m_Markers:
     m_Objects: []
@@ -760,7 +761,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: -8524894403050336496}
   m_Children: []
   m_Clips:
   - m_Version: 1
@@ -1108,7 +1109,6 @@ MonoBehaviour:
   - {fileID: 1903298822520901883}
   - {fileID: 3966922240169499899}
   - {fileID: -8524894403050336496}
-  - {fileID: -4642271877629190092}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
